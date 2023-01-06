@@ -8,12 +8,12 @@ const obj = [
   },
   {
     type: "Investment",
-    color: "#f9c74f",
+    color: "#ff6384",
     percent: 20,
   },
   {
     type: "Expense",
-    color: "rgb(54,162,235)",
+    color: "#36a2eb",
     percent: 10,
   },
 ];
