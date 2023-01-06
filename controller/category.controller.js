@@ -11,17 +11,17 @@ exports.create = asyncHandler(async (_req, res) => {
   } catch (error) {
     console.log(error);
     res.status(500);
-    throw new Error(`Error while creating Category ${error}`);
+    throw new Error(`Something went Wrong`);
   }
 });
 
-exports.getAll = async (_req, res) => {
+exports.getAll = asyncHandler(async (_req, res) => {
   try {
     const categories = await Category.find().select("type color");
     res.status(200).send(categories);
   } catch (error) {
     console.log(error);
     res.status(500);
-    throw new Error(`Error while creating Category ${error}`);
+    throw new Error(`Something went Wrong`);
   }
-};
+});
